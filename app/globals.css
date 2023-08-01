@@ -2,26 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
+    --background: 225 40% 98%;
+    --card: 219 9% 90%;
+    --foreground: 218 52% 9%;
+    --primary: 212 92% 45%;
+    --primary-foreground: 215 60% 96%;
+    --secondary: 0 0% 95%;
+    --link: 212 92% 45%;
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    @media (prefers-color-scheme: dark) {
+      --background: 219 54% 5%;
+      --card: 219 14% 10%;
+      --foreground: 215 60% 96%;
+      --primary: 216 93% 58%;
+      --link: 216 93% 58%;
+    }
+  }
 }
