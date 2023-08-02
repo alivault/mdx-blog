@@ -14,21 +14,55 @@ module.exports = {
         'gradient-circle': 'radial-gradient(circle, var(--tw-gradient-stops))',
       },
       colors: {
-        background: 'hsl(var(--background))',
-        card: 'hsl(var(--card))',
-        foreground: 'hsl(var(--foreground))',
+        background: {
+          DEFAULT: 'hsl(var(--background))',
+          dark: 'hsl(var(--background-dark))',
+        },
+        foreground: {
+          DEFAULT: 'hsl(var(--foreground))',
+          dark: 'hsl(var(--foreground-dark))',
+        },
+        card: {
+          DEFAULT: 'hsl(var(--card))',
+          dark: 'hsl(var(--card-dark))',
+        },
         primary: {
           DEFAULT: 'hsl(var(--primary))',
-          foreground: 'hsl(var(--primary-foreground))',
+          dark: 'hsl(var(--primary-dark))',
+          foreground: {
+            DEFAULT: 'hsl(var(--primary-foreground))',
+            dark: 'hsl(var(--primary-foreground-dark))',
+          },
         },
-        secondary: 'hsl(var(--secondary))',
-        link: 'hsl(var(--link))',
+        secondary: {
+          DEFAULT: 'hsl(var(--secondary))',
+          dark: 'hsl(var(--secondary-dark))',
+        },
+        link: {
+          DEFAULT: 'hsl(var(--link))',
+          dark: 'hsl(var(--link-dark))',
+        },
       },
       typography: {
         DEFAULT: {
           css: {
             'code::before': { content: '""' },
             'code::after': { content: '""' },
+            '.contains-task-list': {
+              paddingLeft: '0.5rem !important',
+            },
+            '.task-list-item': {
+              listStyleType: 'none',
+              paddingLeft: '0 !important',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '0.5rem',
+            },
+            '.task-list-item > input[type="checkbox"]': {
+              margin: '0 !important',
+              width: '1rem !important',
+              height: '1rem !important',
+            },
           },
         },
       },

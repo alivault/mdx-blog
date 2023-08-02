@@ -1,3 +1,4 @@
+import TheNav from './components/TheNav';
 import './globals.css';
 import type { Metadata } from 'next';
 
@@ -12,8 +13,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang='en' className='bg-background text-foreground'>
-      <body className='flex justify-center p-4 md:p-10'>{children}</body>
+    <html
+      lang='en'
+      className='bg-background text-foreground dark:bg-background-dark dark:text-foreground-dark'
+    >
+      <body className='mx-auto max-w-2xl p-4 lg:p-6'>{children}</body>
     </html>
   );
 }

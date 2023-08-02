@@ -1,7 +1,7 @@
 import { getArticlesMeta } from '@/lib/articles';
 import ArticleListItem from './ArticleListItem';
 
-export default async function ArticlesList() {
+export default async function ArticlesSection() {
   const articles = await getArticlesMeta();
 
   if (!articles) {
@@ -9,13 +9,14 @@ export default async function ArticlesList() {
   }
 
   return (
-    <section className='flex flex-col gap-2'>
+    <section className='flex flex-col gap-4'>
       <h2 className='text-xl font-bold'>📔 Articles</h2>
-      <div className='flex flex-col gap-2'>
+
+      <ul className='flex flex-col gap-4'>
         {articles.map(article => (
           <ArticleListItem key={article.id} article={article} />
         ))}
-      </div>
+      </ul>
     </section>
   );
 }

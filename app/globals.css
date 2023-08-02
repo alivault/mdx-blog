@@ -5,19 +5,21 @@
 @layer base {
   :root {
     --background: 225 40% 98%;
-    --card: 219 9% 90%;
-    --foreground: 218 52% 9%;
-    --primary: 212 92% 45%;
-    --primary-foreground: 215 60% 96%;
-    --secondary: 0 0% 95%;
-    --link: 212 92% 45%;
+    --background-dark: 219 54% 5%;
 
-    @media (prefers-color-scheme: dark) {
-      --background: 219 54% 5%;
-      --card: 219 14% 10%;
-      --foreground: 215 60% 96%;
-      --primary: 216 93% 58%;
-      --link: 216 93% 58%;
-    }
+    --card: 219 9% 90%;
+    --card-dark: 219 14% 10%;
+
+    --foreground: 218 52% 9%;
+    --foreground-dark: 215 60% 96%;
+
+    --primary: 212 92% 45%;
+    --primary-dark: 216 93% 58%;
+    --primary-foreground: 215 60% 96%;
+
+    --secondary: 0 0% 95%;
+
+    --link: 212 92% 45%;
+    --link-dark: 203 90% 53%;
   }
 }
