@@ -17,7 +17,8 @@
     --primary-dark: 216 93% 58%;
     --primary-foreground: 215 60% 96%;
 
-    --secondary: 0 0% 95%;
+    --secondary: 0 0% 80%;
+    --secondary-dark: 0 0% 20%;
 
     --link: 212 92% 45%;
     --link-dark: 203 90% 53%;

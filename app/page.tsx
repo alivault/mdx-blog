@@ -27,16 +27,16 @@ export default function Home() {
           I'm a digital designer and full-stack web developer based in Los
           Angeles. Welcome to my website where I share my thoughts on design,
           development, and life. Poke around and see what you find! If you have
-          any questions or comments, feel free to reach out to me via{' '}
-          <a
-            className='text-link hover:underline dark:text-link-dark'
-            href='mailto:hi&#64;aliabbas&#46;dev'
-            target='blank'
-          >
-            email
-          </a>
-          .
+          any questions or comments, feel free to reach out!
         </p>
+        <div className='grid grid-cols-2 gap-2'>
+          <button className='rounded-full bg-primary p-2 text-primary-foreground dark:bg-primary-dark'>
+            Subscribe
+          </button>
+          <button className='rounded-full bg-secondary p-2 dark:bg-secondary-dark'>
+            Message
+          </button>
+        </div>
       </section>
       <ProjectsSection />
       <ExperienceSection />
