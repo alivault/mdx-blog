@@ -10,7 +10,7 @@ export default function ListItem({ article }: Props) {
   const formattedDate = getFormattedDate(date);
 
   return (
-    <li className='flex flex-col gap-1'>
+    <li className='flex flex-col items-start gap-1'>
       <Link
         href={`/articles/${id}`}
         className='text-md text-link hover:underline dark:text-link-dark'

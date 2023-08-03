@@ -1,8 +1,10 @@
 import React from 'react';
+import SectionHeader from './SectionHeader';
+
 export default function ProjectsSection({}) {
   return (
     <section className='flex flex-col gap-4'>
-      <h2 className='text-xl font-bold'>🚀 Projects</h2>
+      <SectionHeader>🚀 Projects</SectionHeader>
       <ul className='flex flex-col gap-4'>
         <li>
           <a

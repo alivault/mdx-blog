@@ -1,9 +1,10 @@
+import SectionHeader from './SectionHeader';
 import ExperienceItem from './ExperienceItem';
 import React from 'react';
 export default function ExperienceSection({}) {
   return (
     <section className='flex flex-col gap-4'>
-      <h2 className='text-xl font-bold'>💼 Experience</h2>
+      <SectionHeader>💼 Experience</SectionHeader>
       <ul className='flex flex-col gap-4'>
         <ExperienceItem
           title='Product Designer & Developer'
