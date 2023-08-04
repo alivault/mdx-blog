@@ -8,7 +8,7 @@ interface AvatarProps {
 
 const sizeMapping = {
   xs: '1rem',
-  sm: '2rem',
+  sm: '1.25rem',
   md: '2.5rem',
   lg: '4rem',
   xl: '5rem',
@@ -20,7 +20,7 @@ const avatar = tv({
   variants: {
     size: {
       xs: 'h-4 w-4',
-      sm: 'h-8 w-8',
+      sm: 'h-5 w-5',
       md: 'h-10 w-10',
       lg: 'h-16 w-16',
       xl: 'h-20 w-20',

@@ -52,8 +52,8 @@ export default async function Article({ params: { articleId } }: Props) {
         <TheNav />
       </header>
       <article className='prose mx-auto dark:prose-invert lg:prose-lg prose-a:text-link prose-a:no-underline hover:prose-a:underline dark:prose-a:text-link-dark'>
+        <p className='text-sm opacity-50'>{date}</p>
         <h1>{meta.title}</h1>
-        <p className='opacity-50'>{date}</p>
         {content}
       </article>
     </main>
