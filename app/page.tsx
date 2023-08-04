@@ -22,8 +22,10 @@ export default function Home() {
           any questions or comments, feel free to reach out!
         </p>
         <div className='grid grid-cols-2 gap-2'>
-          <Button>Follow</Button>
-          <Button color='secondary'>Message</Button>
+          <Button href='/follow'>Follow</Button>
+          <Button href='/message' color='secondary'>
+            Message
+          </Button>
         </div>
       </section>
       <ProjectsSection />
