@@ -1,17 +1,50 @@
 import React from 'react';
 import Image from 'next/image';
+import { tv } from 'tailwind-variants';
 
-export default function Avatar({}) {
+interface AvatarProps {
+  size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl' | '2xl';
+}
+
+const sizeMapping = {
+  xs: '1rem',
+  sm: '2rem',
+  md: '2.5rem',
+  lg: '4rem',
+  xl: '5rem',
+  '2xl': '9rem',
+};
+
+const avatar = tv({
+  base: 'relative flex-shrink-0 overflow-hidden rounded-full',
+  variants: {
+    size: {
+      xs: 'h-4 w-4',
+      sm: 'h-8 w-8',
+      md: 'h-10 w-10',
+      lg: 'h-16 w-16',
+      xl: 'h-20 w-20',
+      '2xl': 'h-36 w-36',
+    },
+  },
+  defaultVariants: {
+    size: 'md',
+  },
+});
+
+const Avatar: React.FC<AvatarProps> = ({ size = 'md' }) => {
   return (
-    <div className='relative h-36 w-36 flex-shrink-0 overflow-hidden rounded-full'>
+    <div className={avatar({ size })}>
       <Image
         src='/img/headshot.jpg'
-        sizes='144px'
         alt="Ali's headshot"
-        fill
+        layout='fill'
         priority
         quality={100}
+        sizes={sizeMapping[size]}
       />
     </div>
   );
-}
+};
+
+export default Avatar;

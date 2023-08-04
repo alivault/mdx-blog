@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <main className='flex flex-col gap-8'>
       <section className='flex flex-col gap-4'>
-        <Avatar />
+        <Avatar size='2xl' />
         <div className='flex flex-col'>
           <h1 className='text-2xl font-bold'>Ali Abbas</h1>
           <p className='opacity-50'>Designer. Developer. Team Player.</p>
