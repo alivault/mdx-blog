@@ -49,10 +49,6 @@ export function FollowForm() {
                 <Input placeholder='Your Email' {...field} />
               </FormControl>
               <FormMessage />
-              <FormDescription>
-                I will never send you spam or sell your information. You can
-                unsubscribe at any time.
-              </FormDescription>
             </FormItem>
           )}
         />

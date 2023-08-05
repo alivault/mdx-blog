@@ -10,9 +10,8 @@ export default function FollowPage() {
       </header>
       <section className='flex flex-col gap-4'>
         <h1 className='text-xl font-bold'>
-          Follow me to explore the beautiful intersection of design and
-          development, and unlock innovative insights to navigate your life and
-          career more creatively.
+          Follow me to unlock innovative insights to navigate your life and
+          career more creatively. No spam. Just good stuff.
         </h1>
         <FollowForm />
       </section>
