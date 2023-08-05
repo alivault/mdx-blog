@@ -10,7 +10,7 @@ export default function ProjectsSection({}) {
           <a
             href='https://www.aliabbas.dev/color-palette-maker/'
             target='blank'
-            className='text-link hover:underline dark:text-link-dark'
+            className='text-link hover:underline'
           >
             Color Palette Maker
           </a>

@@ -16,7 +16,7 @@ const sizeMapping = {
 };
 
 const avatar = tv({
-  base: 'relative flex-shrink-0 overflow-hidden rounded-full',
+  base: 'relative shrink-0 overflow-hidden rounded-full',
   variants: {
     size: {
       xs: 'h-4 w-4',

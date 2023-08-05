@@ -3,7 +3,7 @@ import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import rehypeHighlight from 'rehype-highlight';
 import rehypeSlug from 'rehype-slug';
 import remarkGfm from 'remark-gfm';
-import CustomImage from '@/app/components/CustomImage';
+import CustomImage from '@/components/CustomImage';
 
 type Filetree = {
   tree: [

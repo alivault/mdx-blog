@@ -1,7 +1,7 @@
 import getFormattedDate from '@/lib/getFormattedDate';
 import { getArticlesMeta, getArticleByName } from '@/lib/articles';
 import 'highlight.js/styles/a11y-dark.css';
-import TheNav from '@/app/components/TheNav';
+import TheNav from '@/components/TheNav';
 
 export const revalidate = 86400; // 24 hours
 
@@ -51,7 +51,7 @@ export default async function Article({ params: { articleId } }: Props) {
       <header>
         <TheNav />
       </header>
-      <article className='prose mx-auto dark:prose-invert lg:prose-lg prose-a:text-link prose-a:no-underline hover:prose-a:underline dark:prose-a:text-link-dark'>
+      <article className='prose dark:prose-invert lg:prose-lg prose-a:text-link prose-a:no-underline hover:prose-a:underline dark:prose-a:text-link-dark mx-auto'>
         <p className='text-sm opacity-50'>{date}</p>
         <h1>{meta.title}</h1>
         {content}

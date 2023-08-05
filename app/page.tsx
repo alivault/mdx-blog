@@ -1,8 +1,9 @@
-import Button from './components/Button';
-import Avatar from './components/Avatar';
-import ProjectsSection from './components/ProjectsSection';
-import ArticlesSection from './components/ArticlesSection';
-import ExperienceSection from './components/ExperienceSection';
+import ArticlesSection from '@/components/ArticlesSection';
+import Avatar from '@/components/Avatar';
+import ExperienceSection from '@/components/ExperienceSection';
+import ProjectsSection from '@/components/ProjectsSection';
+import { Button } from '@/components/ui/button';
+import Link from 'next/link';
 
 export const revalidate = 86400; // 24 hours
 
@@ -18,13 +19,15 @@ export default function Home() {
         <p>
           I'm a digital designer and full-stack web developer based in Los
           Angeles. Welcome to my website where I share my thoughts on design,
-          development, and life. Poke around and see what you find! If you have
-          any questions or comments, feel free to reach out!
+          development, and life. If you have any questions or comments, feel
+          free to reach out!
         </p>
         <div className='grid grid-cols-2 gap-2'>
-          <Button href='/follow'>Follow</Button>
-          <Button href='/message' color='secondary'>
-            Message
+          <Button asChild>
+            <Link href='/follow'>Follow</Link>
+          </Button>
+          <Button asChild variant={'secondary'}>
+            <Link href='/message'>Message</Link>
           </Button>
         </div>
       </section>

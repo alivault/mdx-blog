@@ -13,7 +13,7 @@ export default function ListItem({ article }: Props) {
     <li className='flex flex-col items-start gap-1'>
       <Link
         href={`/articles/${id}`}
-        className='text-md text-link hover:underline dark:text-link-dark'
+        className='text-md text-link hover:underline'
       >
         {title}
       </Link>

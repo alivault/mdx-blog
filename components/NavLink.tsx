@@ -8,7 +8,7 @@ interface Props {
 
 const NavLink: React.FC<Props> = ({ children, href }) => {
   return (
-    <Link href={href} className='text-link hover:underline dark:text-link-dark'>
+    <Link href={href} className='text-link hover:underline'>
       {children}
     </Link>
   );
