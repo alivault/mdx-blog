@@ -3,8 +3,8 @@ import Image from 'next/image';
 
 interface AvatarProps {
   size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl' | '2xl';
-  src: string;
-  alt: string;
+  src?: string;
+  alt?: string;
   quality?: number;
   priority?: boolean;
 }
